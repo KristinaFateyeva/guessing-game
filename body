@@ -1,0 +1,17 @@
+from random import randint
+number = randint(0, 1000)
+print('Welcome to the game!\n I have picked a number between 0 and 1000. What is the number?')
+guess = int(input('Your guess: '))
+while guess != number:
+  if guess > number:
+    print('Incorrect.\nLet me give you a hint. The number is smaller than your guess.\nTry again.')
+    print('-' * 20)
+    guess = int(input('Your guess: '))
+  else:
+    print('Incorrect.\nLet me give you a hint. The number is higher than your guess.\nTry again.')
+    print('-' * 20)
+    guess = int(input('Your guess: '))
+else:
+  print(f'That's correct! You won! The number I've picked is {number}.')
+  print('-' * 20)
+  exit = input('To exit the game press Enter.')
