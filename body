@@ -13,5 +13,4 @@ while guess != number:
     guess = int(input('Your guess: '))
 else:
   print(f'That's correct! You won! The number I've picked is {number}.')
-  print('-' * 20)
   exit = input('To exit the game press Enter.')
