@@ -9,7 +9,6 @@ while guess != number:
     guess = int(input('Your guess: '))
   else:
     print('Incorrect.\nLet me give you a hint. The number is higher than your guess.\nTry again.')
-    print('-' * 20)
     guess = int(input('Your guess: '))
 else:
   print(f'That's correct! You won! The number I've picked is {number}.')
